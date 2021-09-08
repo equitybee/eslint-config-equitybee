@@ -21,7 +21,7 @@
   },
   "eslint.workingDirectories": [
     {
-      "directory": "api",
+      "directory": ".",
       "changeProcessCWD": true
     }
   ],
