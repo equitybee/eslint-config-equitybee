@@ -1,0 +1,29 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cSpell.words": ["beemail", "equitybee", "firestore", "fundit"],
+  "javascript.validate.enable": false,
+  "editor.formatOnSave": true,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/dist": true,
+    "**/lib": true,
+    "**/lib-amd": true,
+    "**/test/**/temp": false,
+    "**/temp": true,
+    "**/coverage": true
+  },
+  "eslint.workingDirectories": [
+    {
+      "directory": "api",
+      "changeProcessCWD": true
+    }
+  ],
+  "auto-close-tag.disableOnLanguage": ["typescript"]
+}
