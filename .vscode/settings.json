@@ -24,6 +24,5 @@
       "directory": ".",
       "changeProcessCWD": true
     }
-  ],
-  "auto-close-tag.disableOnLanguage": ["typescript"]
+  ]
 }
