@@ -21,7 +21,7 @@ module.exports = {
     "no-var": "warn",
     "object-shorthand": "warn",
     "prefer-const": "warn",
-    "prefer-destructuring": ["error", { object: true, array: true }],
+    "prefer-destructuring": ["warn", { object: true, array: true }],
     "prefer-template": "error",
     camelcase: "off",
     curly: "error",
