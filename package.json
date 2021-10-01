@@ -12,6 +12,9 @@
     "eslint-plugin-prettier": "^3.3.1",
     "prettier": "^2.2.1"
   },
+  "scripts": {
+    "release": "np"
+  },
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-config-node": "^4.1.0",
@@ -19,7 +22,8 @@
     "eslint-plugin-import": "^2.18.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.3.1",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "np": "*"
   },
   "keywords": [
     "equitybee",
