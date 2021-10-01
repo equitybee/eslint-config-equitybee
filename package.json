@@ -15,6 +15,9 @@
   "scripts": {
     "release": "np"
   },
+  "files": [
+    "index.js"
+  ],
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-config-node": "^4.1.0",
