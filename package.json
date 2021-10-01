@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-equitybee-config",
+  "name": "eslint-config-equitybee",
   "version": "1.0.1",
   "description": "ESLint shareable config for the EquityBee style",
   "main": "index.js",
