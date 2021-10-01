@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-equitybee-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ESLint shareable config for the EquityBee style",
   "main": "index.js",
   "peerDependencies": {
