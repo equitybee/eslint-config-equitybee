@@ -2,13 +2,11 @@
 
 > ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html) for the recommended EquityBee JavaScript style
 
-
 ## Installation
 
 ```
 $ npm install --save-dev eslint eslint-config-equitybee
 ```
-
 
 ## Usage
 
@@ -38,6 +36,15 @@ To use the EquityBee style in conjunction with ESLint's recommended rule set, ex
 }
 ```
 
+## How to make a new release
+
+Run:
+
+```
+npm run release
+```
+
+and follow the instructions.
 
 ## License
 
