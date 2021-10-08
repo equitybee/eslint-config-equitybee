@@ -2,6 +2,8 @@ module.exports = {
   extends: ["eslint:recommended", "prettier"],
   plugins: ["prettier"],
   rules: {
+    "no-index": "warn",
+    "no-invalid-suffix": "warn",
     "import/no-extraneous-dependencies": "warn",
     "import/order": [
       "warn",

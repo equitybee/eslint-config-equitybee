@@ -14,10 +14,12 @@
   },
   "scripts": {
     "release": "np",
-    "test": "mocha tests/lib/rules/*.js"
+    "test": "mocha tests/lib/rules/*.js",
+    "lint": "eslint \"tests/**\" \"lib/**\""
   },
   "files": [
-    "index.js"
+    "index.js",
+    "lib/**"
   ],
   "devDependencies": {
     "eslint": "^6.8.0",
