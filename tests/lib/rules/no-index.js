@@ -14,6 +14,10 @@ ruleTester.run("no-index", indexRule, {
       code: testCode,
       filename: "/some/dir/equitybee.js",
     },
+    {
+      code: testCode,
+      filename: "/some/dir/index-equitybee.js",
+    },
   ],
   invalid: [
     {
@@ -24,16 +28,6 @@ ruleTester.run("no-index", indexRule, {
     {
       code: testCode,
       filename: "/some/dir/index.js",
-      errors: [{ message: "Files named 'index' are not allowed.", column: 1, line: 1 }],
-    },
-    {
-      code: testCode,
-      filename: "/some/dir/index-equitybee.js",
-      errors: [{ message: "Files named 'index' are not allowed.", column: 1, line: 1 }],
-    },
-    {
-      code: testCode,
-      filename: "/some/dir/equitybeeIndex.js",
       errors: [{ message: "Files named 'index' are not allowed.", column: 1, line: 1 }],
     },
   ],
