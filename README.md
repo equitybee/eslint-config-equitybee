@@ -48,7 +48,7 @@ npm run release
 
 and follow the interactive instructions.
 
-3. Open EquityBee's main app repo and update every service's `package.json` with the latest version of `eslint-config-equitybee` (the version you published to NPM in the previous step).
+3. Open EquityBee's main app repo and `cd` into every service and run `npm update eslint-config-equitybee`, then `npm i`.
 
 ## License
 
