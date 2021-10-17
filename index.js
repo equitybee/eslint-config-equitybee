@@ -1,9 +1,13 @@
+// Checks for a kebab-case string pre-pending at most one '.' with a lowercase string
+// Refer to the internal "Client Style Guide" Google doc for more information
+const VALID_FILENAME_REGEX = `^([a-z][a-z0-9]*)(-[a-z0-9]+)*(\.[a-z0-9]+)?$`;
+
 module.exports = {
   extends: ["eslint:recommended", "prettier"],
-  plugins: ["prettier"],
+  plugins: ["filenames", "prettier"],
   rules: {
-    "no-index": "warn",
-    "no-invalid-suffix": "warn",
+    "filenames/no-index": "warn",
+    "filenames/match-regex": ["warn", VALID_FILENAME_REGEX, true],
     "import/no-extraneous-dependencies": "warn",
     "import/order": [
       "warn",
@@ -23,7 +27,7 @@ module.exports = {
     "no-var": "warn",
     "object-shorthand": "warn",
     "prefer-const": "warn",
-    "prefer-destructuring": ["warn", { object: true, array: true }],
+    "prefer-destructuring": ["warn", { object: true }],
     "prefer-template": "warn",
     camelcase: "off",
     curly: "warn",
