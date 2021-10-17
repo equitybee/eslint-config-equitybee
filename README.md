@@ -38,13 +38,17 @@ To use the EquityBee style in conjunction with ESLint's recommended rule set, ex
 
 ## How to make a new release
 
-Run:
+1. Test your changes by running `npm link`. Then open EquityBee's main app repo, `cd` into a service you want to test and run `npm link /Users/{YOUR_USERNAME}/{YOUR_LOCAL_PATH}/eslint-config-equitybee`. For more information on testing shareable ESLint configs, [read this](https://eslint.org/docs/developer-guide/shareable-configs). You may have to modify the service's `.eslintrc.json` file and add `/Users/{YOUR_USERNAME}/{YOUR_LOCAL_PATH}/eslint-config-equitybee` to the `"extends":` array.
+
+2. Run:
 
 ```
 npm run release
 ```
 
-and follow the instructions.
+and follow the interactive instructions.
+
+3. Open EquityBee's main app repo and update every service's `package.json` with the latest version of `eslint-config-equitybee` (the version you published to NPM in the previous step).
 
 ## License
 
