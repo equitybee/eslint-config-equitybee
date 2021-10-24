@@ -4,7 +4,7 @@ const VALID_FILENAME_REGEX = `^([a-z][a-z0-9]*)(-[a-z0-9]+)*(\.[a-z0-9]+)?$`;
 
 module.exports = {
   extends: ["eslint:recommended", "prettier"],
-  plugins: ["filenames", "prettier"],
+  plugins: ["filenames", "react-hooks", "prettier"],
   rules: {
     "filenames/no-index": "warn",
     "filenames/match-regex": ["warn", VALID_FILENAME_REGEX, true],
@@ -22,15 +22,21 @@ module.exports = {
     "no-extra-semi": 2,
     "no-param-reassign": "warn",
     "no-undef": "off",
+    "no-useless-return": "warn",
+    "arrow-body-style": "warn",
     "no-unneeded-ternary": "error",
     "no-unused-vars": ["error", { args: "none" }],
     "no-var": "warn",
     "object-shorthand": "warn",
     "prefer-const": "warn",
+    "max-lines": ["warn", { skipBlankLines: true, skipComments: true }],
+    "id-length": ["warn", { properties: "never" }],
     "prefer-destructuring": ["warn", { object: true }],
     "prefer-template": "warn",
+    "react-hooks/exhaustive-deps": "off",
     camelcase: "off",
-    curly: "warn",
+    curly: ["warn", "all"],
+    yoda: "warn",
     semi: [2, "always"],
   },
 };
