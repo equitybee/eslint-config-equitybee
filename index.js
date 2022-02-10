@@ -15,6 +15,7 @@ module.exports = {
         "newlines-between": "always",
       },
     ],
+    "no-undef": "error",
     "no-case-declarations": "warn",
     "no-console": "warn",
     "no-debugger": "warn",
