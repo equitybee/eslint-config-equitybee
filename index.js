@@ -27,6 +27,7 @@ module.exports = {
     "no-unneeded-ternary": "error",
     "no-unused-vars": ["error", { args: "none" }],
     "no-var": "warn",
+    "no-return-await": "error",
     "object-shorthand": "warn",
     "prefer-const": "warn",
     "max-lines": ["warn", { skipBlankLines: true, skipComments: true }],
